@@ -36,7 +36,7 @@ def normalize_phone(phone_number):
     elif cleaned.startswith('0'):
         return '+38' + cleaned
     else:
-        return '+380' + cleaned
+        return '+380' + cleaned # Якщо номер починається лише з коду оператора без 0, додаємо код '+380'
 
 """ 
 Завдання 4
